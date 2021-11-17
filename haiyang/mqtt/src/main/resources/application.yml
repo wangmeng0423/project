@@ -1,0 +1,32 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+spring:
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/read_data?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+#    username: root
+#    password: 12345
+#    driver-class-name: com.mysql.jdbc.Driver
+
+
+  mqtt:
+    broker: tcp://127.0.0.1:1883
+    clientId: 123 #客户端的id
+    username: admin
+    password: 123456
+    timeout: 2000
+    KeepAlive: 20
+    topics: ServerId_02 #主题
+    qos: 1 #心跳包级别
+
+  influx:
+    url: http://localhost:8086
+    token: vGLGb5rK5f3-l_uR9JEfLM1iNgOJfMPjkGXA9xANd2SbmXeKbneV1vshdT_nsxtleHokXzP-M6f0ESXZyJJSNg==
+    org: haiyang
+    bucket: mydb2
+
+
+  main:
+    allow-bean-definition-overriding: true

@@ -1,0 +1,5 @@
+com\zkxt\influxdb\controller\InsertController.class
+com\zkxt\influxdb\config\InfluxDbConfig.class
+com\zkxt\influxdb\InfluxdbApplication.class
+com\zkxt\influxdb\service\impl\InsertData.class
+com\zkxt\influxdb\service\InsertDataService.class

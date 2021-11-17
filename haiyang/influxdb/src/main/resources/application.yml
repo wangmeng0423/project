@@ -1,0 +1,15 @@
+server:
+  port: 8081
+  servlet:
+    context-path: /
+
+
+spring:
+  influx:
+    url: http://localhost:8086
+    token: vGLGb5rK5f3-l_uR9JEfLM1iNgOJfMPjkGXA9xANd2SbmXeKbneV1vshdT_nsxtleHokXzP-M6f0ESXZyJJSNg==
+    org: haiyang
+    bucket: mydb2
+
+  main:
+    allow-bean-definition-overriding: true
